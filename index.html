@@ -3,54 +3,119 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Register</title>
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Ubuntu" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
     <section>
-      
-    <div class="form-center">
-      <form action="https://httpbin.org/anything" method="post">
-    <form action="submit.php" method="post">
-      <label for="firstname" >first Name</label>
-      <input type="name" id="text1" name="name" required/><br />
+      <h3 class="form-title">Registration form</h3>
+      <form action="https://httpbin.org/anything" method="post" class="form">
+        <div class="form-center">
+          <!-- row -->
+          <div class="form-row firstName">
+            <label for="firstname" class="form-label">First Name</label>
+            <input
+              type="name"
+              id="text1"
+              name="name"
+              class="form-input"
+              required
+            /><br />
+          </div>
+          <!-- row -->
+          <div class="form-row lastName">
+            <label for="lastname" class="form-label">Last Name</label>
+            <input
+              type="name"
+              id="text1"
+              name="name"
+              class="form-input"
+              required
+            /><br />
+          </div>
+          <!-- row -->
+          <div class="form-row email">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              id="text2"
+              class="form-input"
+              name="email"
+            /><br />
+          </div>
+          <!-- row -->
+          <div class="form-row password">
+            <label class="form-label" for="password">Lösenord:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="form-input"
+            /><br />
+          </div>
 
-  
-      <label for="firstname" >Last name</label>
-       <input type="name" id="text1" name="name" required/><br />
-     
-      <label for="email">email</label>
-      <input type="email" id="text2" name="email" /><br />
+          
+            <!-- row -->
+            <div class="form-row firstName">
+              <label for="firstname" class="form-label">First Name</label>
+              <input
+                type="name"
+                id="text1"
+                name="name"
+                class="form-input"
+                required
+              /><br />
+            </div>
 
-      <label for="password">Lösenord:</label>
-      <input type="password" id="password" name="password" /><br />
+            <div>
+              <label>Gender:</label><br />
 
-      <label>Gender:</label><br />
-      <input type="radio" id="radio1" name="male" value="male" />
-      <label for="Male">Male</label><br />
+              <div class="radio-center">
+                <input type="radio" id="radio1" name="gender" value="male" />
+                <label for="Male">Male</label><br />
+                <input type="radio" id="radio2" name="gender" value="female" />
+                <label for="Female">Female</label><br />
+              </div>
+            </div>
 
-      <input type="radio" id="radio2" name="female" value="female" />
-      <label for="Female">Female</label><br />
+          <!-- row -->
+          <div class="form-row firstName">
+            <label for="firstname" class="form-label">First Name</label>
+            <input
+              type="name"
+              id="text1"
+              name="name"
+              class="form-input"
+              required
+            /><br />
+          </div>
+          <!-- row -->
+          <div class="form-row">
+            <label>Order:</label><br />
+            <div class="radio-center">
+              <input
+                type="checkbox"
+                id="checkbox1"
+                name="mainDish"
+                value="pasta"
+              />
+              <label for="checkbox1">Pasta</label><br />
+              <input
+                type="checkbox"
+                id="checkbox2"
+                name="secondaryDish"
+                value="tomatos"
+              />
+              <label for="checkbox2">Tomatos</label><br />
+            </div>
 
-      <label>order:</label><br />
-      <input
-        type="checkbox"
-        id="checkbox1"
-        name="mainDish"
-        value="pasta"
-      />
-      <label for="checkbox1">pasta</label><br />
-
-      <input
-        type="checkbox"
-        id="checkbox2"
-        name="secondaryDish"
-        value="tomatos"
-      />
-      <label for="checkbox2">tomatos</label><br />
-
-      <input type="submit" value="Skicka" />
-    </form>
-    </div>
+        </div>
+        <!-- row -->
+        <div class="btn">
+          <input type="submit" value="Skicka" />
+        </div>
+      </form>
     </section>
   </body>
 </html>
